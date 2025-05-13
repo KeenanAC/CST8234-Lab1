@@ -1,9 +1,13 @@
 #include <stdio.h>
 
+
+/* Main program logic begins here */
 int main(void) {
 
+    /* Variable declarations */
     int a = 0, b = 1, c, n, i = 0;
 
+    /* User prompt for Nth value */
     printf("Enter the value of N: ");
     scanf("%d", &n);
 
@@ -14,6 +18,8 @@ int main(void) {
     }
 
     printf("Fibonacci sequence up to the %d term: ", n);
+
+    /* Begin for loop to complete Fibonacci sequence */
     for (i = 0; i < n; i++) {
         /* First print out a before calculation */
         if (i == 0) {
