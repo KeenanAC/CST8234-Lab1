@@ -17,26 +17,17 @@ int main(void) {
         return 1;
     }
 
-    printf("Fibonacci sequence up to the %d term: ", n);
+    /* Provide output statement for given value */
+    printf("Fibonacci sequence up to the %dth term: ", n);
 
     /* Begin for loop to complete Fibonacci sequence */
     for (i = 0; i < n; i++) {
-        /* First print out a before calculation */
-        if (i == 0) {
-            printf("%d ", a);
-        }
-        /* Then print out b before calculation */
-        else if (i == 1) {
-            printf("%d ", b);
-        }
-        /* Finally do calculations until i < n */
-        else {
-            c = a + b;
-            printf("%d ", c);
-            a = b;
-            b = c;
-        }
+        c = a + b;
+        printf("%d ", a);
+        a = b;
+        b = c;
     }
+
 
     printf("\n");
     return 0;
